@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
 
+    <style>
+        html,
+        body {
+            height: 100vh;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
     <title>Laravel</title>
 
 </head>
 
 <body>
-    <div class="flex border border-gray-300" id="app">
-
-        <h1>Hello</h1>
-        <h1>Hello</h1>
+    <div id="app">
+        <p>Hello, there, <span data-tooltip="I am a tooltip">hover over me</span></p>
+        <div id="tooltip" role="tooltip"> I'm a tooltip </div>
     </div>
 
     <script src="/js/app.js"></script>
